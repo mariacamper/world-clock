@@ -22,6 +22,18 @@ let sydneyTime = moment().tz("Australia/Sydney");
 sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do, YYYY");
 sydneyTimeElement.innerHTML = sydneyTime.format("h:mm:ss:SSS [<small>]A[</small>]");
  
+  //Lisbon
+  let lisbonElement = document.querySelector("#lisbon");
+  let lisbonDateElement = lisbonElement.querySelector(".date");
+  let lisbonTimeElement = lisbonElement.querySelector(".time");
+  
+  let lisbonTime = moment().tz("Europe/Lisbon");
+  
+  
+  lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do, YYYY");
+  lisbonTimeElement.innerHTML = lisbonTime.format("h:mm:ss:SSS [<small>]A[</small>]");
+   
+
 }
 
 function updateCity(event) {
